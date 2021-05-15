@@ -11,9 +11,9 @@ import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 
-public class SlimeOreBlock extends Block {
+public class OreBlock extends Block {
 
-    public SlimeOreBlock(Settings settings) {
+    public OreBlock(Settings settings) {
         super(settings);
     }
 
