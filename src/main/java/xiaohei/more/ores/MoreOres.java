@@ -26,16 +26,29 @@ public class MoreOres implements ModInitializer {
 	public static final Block SLIME_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.STONE));
 	public static final Block BLAZE_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.STONE));
 	public static final Block LEATHER_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.STONE));
+	public static final Block ENDERPEARL_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.STONE));
+	public static final Block FEATHER_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.STONE));
+	public static final Block NETHERWART_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.STONE));
+	public static final Block SHULKERSHELL_ORE = new OreBlock(FabricBlockSettings.copy(Blocks.STONE));
 
 	private static ConfiguredFeature<?, ?> SLIME_ORE_OVERWORLD = configurefeature(SLIME_ORE, 0, 240, 9, 20);
 	private static ConfiguredFeature<?, ?> BLAZE_ORE_OVERWORLD = configurefeature(BLAZE_ORE, 0, 240, 9, 20);
 	private static ConfiguredFeature<?, ?> LEATHER_ORE_OVERWORLD = configurefeature(LEATHER_ORE, 0, 240, 9, 20);
+	private static ConfiguredFeature<?, ?> ENDERPEARL_ORE_OVERWORLD = configurefeature(ENDERPEARL_ORE, 0, 240, 9, 20);
+	private static ConfiguredFeature<?, ?> FEATHER_ORE_OVERWORLD = configurefeature(FEATHER_ORE, 0, 240, 9, 20);
+	private static ConfiguredFeature<?, ?> NETHERWART_ORE_OVERWORLD = configurefeature(NETHERWART_ORE, 0, 240, 9, 20);
+	private static ConfiguredFeature<?, ?> SHULKERSHELL_ORE_OVERWORLD = configurefeature(SHULKERSHELL_ORE, 0, 240, 9,
+			15);
 
 	@Override
 	public void onInitialize() {
 		registerOre("blaze_ore", BLAZE_ORE, BLAZE_ORE_OVERWORLD);
 		registerOre("slime_ore", SLIME_ORE, SLIME_ORE_OVERWORLD);
 		registerOre("leather_ore", LEATHER_ORE, LEATHER_ORE_OVERWORLD);
+		registerOre("enderpearl_ore", ENDERPEARL_ORE, ENDERPEARL_ORE_OVERWORLD);
+		registerOre("feather_ore", FEATHER_ORE, FEATHER_ORE_OVERWORLD);
+		registerOre("netherwart_ore", NETHERWART_ORE, NETHERWART_ORE_OVERWORLD);
+		registerOre("shulkershell_ore", SHULKERSHELL_ORE, SHULKERSHELL_ORE_OVERWORLD);
 	}
 
 	private void registerOre(String ore_name, Block ore_block, ConfiguredFeature<?, ?> feature) {

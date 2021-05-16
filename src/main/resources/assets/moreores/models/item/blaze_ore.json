@@ -1,6 +1,3 @@
 {
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "moreores:block/blaze_ore"
-  }
+  "parent": "moreores:block/blaze_ore"
 }
